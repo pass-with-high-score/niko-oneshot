@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<motion-params
+    acceleration="160"
+    awakeState="awake"
+    deaccelerationDistance="60"
+    initialState="stop"
+    maxVelocity="100"
+    moveStatePrefix="move"
+    proximityDistance="10"
+    wallStatePrefix="wall">
+
+    <motion
+        checkWall="true"
+        nextState="wait"
+        state="stop">
+        <item
+            drawable="@drawable/ahead1"
+            duration="5000" />
+    </motion>
+
+    <motion state="wait">
+        <repeat-item repeatCount="999">
+            <item
+                drawable="@drawable/ahead1"
+                duration="1000" />
+            <item
+                drawable="@drawable/ahead2"
+                duration="300" />
+            <item
+                drawable="@drawable/ahead3"
+                duration="500" />
+        </repeat-item>
+    </motion>
+
+    <motion
+        checkMove="true"
+        nextState="stop"
+        state="awake">
+        <item
+            drawable="@drawable/ahead2"
+            duration="500" />
+        <item
+            drawable="@drawable/left2"
+            duration="250" />
+        <item
+            drawable="@drawable/right2"
+            duration="250" />
+        <item
+            drawable="@drawable/ahead1"
+            duration="500" />
+    </motion>
+
+    <motion state="moveUp">
+        <repeat-item>
+            <item
+                drawable="@drawable/back1"
+                duration="250" />
+            <item
+                drawable="@drawable/back2"
+                duration="250" />
+            <item
+                drawable="@drawable/back3"
+                duration="250" />
+        </repeat-item>
+    </motion>
+
+    <motion state="moveDown">
+        <repeat-item>
+            <item
+                drawable="@drawable/ahead1"
+                duration="250" />
+            <item
+                drawable="@drawable/ahead2"
+                duration="250" />
+            <item
+                drawable="@drawable/ahead3"
+                duration="250" />
+        </repeat-item>
+    </motion>
+
+    <motion state="moveLeft">
+        <repeat-item>
+            <item
+                drawable="@drawable/left1"
+                duration="250" />
+            <item
+                drawable="@drawable/left2"
+                duration="250" />
+            <item
+                drawable="@drawable/left3"
+                duration="250" />
+        </repeat-item>
+    </motion>
+
+    <motion state="moveRight">
+        <repeat-item>
+            <item
+                drawable="@drawable/right1"
+                duration="250" />
+            <item
+                drawable="@drawable/right2"
+                duration="250" />
+            <item
+                drawable="@drawable/right3"
+                duration="250" />
+        </repeat-item>
+    </motion>
+
+    <motion state="moveUpLeft">
+        <repeat-item>
+            <item
+                drawable="@drawable/left1"
+                duration="250" />
+            <item
+                drawable="@drawable/left2"
+                duration="250" />
+            <item
+                drawable="@drawable/left3"
+                duration="250" />
+        </repeat-item>
+    </motion>
+
+    <motion state="moveUpRight">
+        <repeat-item>
+            <item
+                drawable="@drawable/right1"
+                duration="250" />
+            <item
+                drawable="@drawable/right2"
+                duration="250" />
+            <item
+                drawable="@drawable/right3"
+                duration="250" />
+        </repeat-item>
+    </motion>
+
+    <motion state="moveDownRight">
+        <repeat-item>
+            <item
+                drawable="@drawable/right1"
+                duration="250" />
+            <item
+                drawable="@drawable/right2"
+                duration="250" />
+            <item
+                drawable="@drawable/right3"
+                duration="250" />
+        </repeat-item>
+    </motion>
+
+    <motion state="moveDownLeft">
+        <repeat-item>
+            <item
+                drawable="@drawable/left1"
+                duration="250" />
+            <item
+                drawable="@drawable/left2"
+                duration="250" />
+            <item
+                drawable="@drawable/left3"
+                duration="250" />
+        </repeat-item>
+    </motion>
+
+    <motion
+        nextState="wait"
+        state="wallLeft">
+        <repeat-item repeatCount="2">
+            <item
+                drawable="@drawable/left2"
+                duration="250" />
+            <item
+                drawable="@drawable/right2"
+                duration="250" />
+        </repeat-item>
+    </motion>
+
+    <motion
+        nextState="wait"
+        state="wallRight">
+        <repeat-item repeatCount="2">
+            <item
+                drawable="@drawable/right2"
+                duration="250" />
+            <item
+                drawable="@drawable/left2"
+                duration="250" />
+        </repeat-item>
+    </motion>
+
+</motion-params>
