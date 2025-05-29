@@ -13,21 +13,38 @@
         checkWall="true"
         nextState="wait"
         state="stop">
-        <item
-            drawable="@drawable/ahead1"
-            duration="5000" />
+        <repeat-item repeatCount="5">
+            <item
+                drawable="@drawable/ahead1"
+                duration="500" />
+            <item
+                drawable="@drawable/ahead2"
+                duration="500" />
+            <item
+                drawable="@drawable/ahead3"
+                duration="500" />
+            <item
+                drawable="@drawable/ahead4"
+                duration="500" />
+            <item
+                drawable="@drawable/ahead5"
+                duration="500" />
+            <item
+                drawable="@drawable/ahead6"
+                duration="500" />
+        </repeat-item>
     </motion>
 
     <motion state="wait">
-        <repeat-item repeatCount="999">
+        <repeat-item repeatCount="2">
             <item
                 drawable="@drawable/ahead1"
-                duration="1000" />
-            <item
-                drawable="@drawable/ahead2"
-                duration="300" />
+                duration="500" />
             <item
                 drawable="@drawable/ahead3"
+                duration="500" />
+            <item
+                drawable="@drawable/ahead6"
                 duration="500" />
         </repeat-item>
     </motion>
@@ -37,30 +54,57 @@
         nextState="stop"
         state="awake">
         <item
-            drawable="@drawable/ahead2"
-            duration="500" />
-        <item
-            drawable="@drawable/left2"
-            duration="250" />
-        <item
-            drawable="@drawable/right2"
-            duration="250" />
-        <item
             drawable="@drawable/ahead1"
-            duration="500" />
+            duration="400" />
+        <item
+            drawable="@drawable/left1"
+            duration="400" />
+        <item
+            drawable="@drawable/right1"
+            duration="400" />
+        <item
+            drawable="@drawable/ahead3"
+            duration="400" />
     </motion>
 
     <motion state="moveUp">
         <repeat-item>
             <item
                 drawable="@drawable/back1"
-                duration="250" />
+                duration="120" />
             <item
                 drawable="@drawable/back2"
-                duration="250" />
+                duration="120" />
             <item
                 drawable="@drawable/back3"
-                duration="250" />
+                duration="120" />
+            <item
+                drawable="@drawable/back4"
+                duration="120" />
+            <item
+                drawable="@drawable/back5"
+                duration="120" />
+            <item
+                drawable="@drawable/back6"
+                duration="120" />
+            <item
+                drawable="@drawable/back7"
+                duration="120" />
+            <item
+                drawable="@drawable/back8"
+                duration="120" />
+            <item
+                drawable="@drawable/back9"
+                duration="120" />
+            <item
+                drawable="@drawable/back10"
+                duration="120" />
+            <item
+                drawable="@drawable/back11"
+                duration="120" />
+            <item
+                drawable="@drawable/back12"
+                duration="120" />
         </repeat-item>
     </motion>
 
@@ -68,13 +112,40 @@
         <repeat-item>
             <item
                 drawable="@drawable/ahead1"
-                duration="250" />
+                duration="120" />
             <item
                 drawable="@drawable/ahead2"
-                duration="250" />
+                duration="120" />
             <item
                 drawable="@drawable/ahead3"
-                duration="250" />
+                duration="120" />
+            <item
+                drawable="@drawable/ahead4"
+                duration="120" />
+            <item
+                drawable="@drawable/ahead5"
+                duration="120" />
+            <item
+                drawable="@drawable/ahead6"
+                duration="120" />
+            <item
+                drawable="@drawable/ahead7"
+                duration="120" />
+            <item
+                drawable="@drawable/ahead8"
+                duration="120" />
+            <item
+                drawable="@drawable/ahead9"
+                duration="120" />
+            <item
+                drawable="@drawable/ahead10"
+                duration="120" />
+            <item
+                drawable="@drawable/ahead11"
+                duration="120" />
+            <item
+                drawable="@drawable/ahead12"
+                duration="120" />
         </repeat-item>
     </motion>
 
@@ -82,13 +153,40 @@
         <repeat-item>
             <item
                 drawable="@drawable/left1"
-                duration="250" />
+                duration="120" />
             <item
                 drawable="@drawable/left2"
-                duration="250" />
+                duration="120" />
             <item
                 drawable="@drawable/left3"
-                duration="250" />
+                duration="120" />
+            <item
+                drawable="@drawable/left4"
+                duration="120" />
+            <item
+                drawable="@drawable/left5"
+                duration="120" />
+            <item
+                drawable="@drawable/left6"
+                duration="120" />
+            <item
+                drawable="@drawable/left7"
+                duration="120" />
+            <item
+                drawable="@drawable/left8"
+                duration="120" />
+            <item
+                drawable="@drawable/left9"
+                duration="120" />
+            <item
+                drawable="@drawable/left10"
+                duration="120" />
+            <item
+                drawable="@drawable/left11"
+                duration="120" />
+            <item
+                drawable="@drawable/left12"
+                duration="120" />
         </repeat-item>
     </motion>
 
@@ -96,13 +194,40 @@
         <repeat-item>
             <item
                 drawable="@drawable/right1"
-                duration="250" />
+                duration="120" />
             <item
                 drawable="@drawable/right2"
-                duration="250" />
+                duration="120" />
             <item
                 drawable="@drawable/right3"
-                duration="250" />
+                duration="120" />
+            <item
+                drawable="@drawable/right4"
+                duration="120" />
+            <item
+                drawable="@drawable/right5"
+                duration="120" />
+            <item
+                drawable="@drawable/right6"
+                duration="120" />
+            <item
+                drawable="@drawable/right7"
+                duration="120" />
+            <item
+                drawable="@drawable/right8"
+                duration="120" />
+            <item
+                drawable="@drawable/right9"
+                duration="120" />
+            <item
+                drawable="@drawable/right10"
+                duration="120" />
+            <item
+                drawable="@drawable/right11"
+                duration="120" />
+            <item
+                drawable="@drawable/right12"
+                duration="120" />
         </repeat-item>
     </motion>
 
@@ -110,13 +235,16 @@
         <repeat-item>
             <item
                 drawable="@drawable/left1"
-                duration="250" />
+                duration="120" />
             <item
                 drawable="@drawable/left2"
-                duration="250" />
+                duration="120" />
             <item
                 drawable="@drawable/left3"
-                duration="250" />
+                duration="120" />
+            <item
+                drawable="@drawable/left4"
+                duration="120" />
         </repeat-item>
     </motion>
 
@@ -124,13 +252,16 @@
         <repeat-item>
             <item
                 drawable="@drawable/right1"
-                duration="250" />
+                duration="120" />
             <item
                 drawable="@drawable/right2"
-                duration="250" />
+                duration="120" />
             <item
                 drawable="@drawable/right3"
-                duration="250" />
+                duration="120" />
+            <item
+                drawable="@drawable/right4"
+                duration="120" />
         </repeat-item>
     </motion>
 
@@ -138,13 +269,16 @@
         <repeat-item>
             <item
                 drawable="@drawable/right1"
-                duration="250" />
+                duration="120" />
             <item
                 drawable="@drawable/right2"
-                duration="250" />
+                duration="120" />
             <item
                 drawable="@drawable/right3"
-                duration="250" />
+                duration="120" />
+            <item
+                drawable="@drawable/right4"
+                duration="120" />
         </repeat-item>
     </motion>
 
@@ -152,13 +286,16 @@
         <repeat-item>
             <item
                 drawable="@drawable/left1"
-                duration="250" />
+                duration="120" />
             <item
                 drawable="@drawable/left2"
-                duration="250" />
+                duration="120" />
             <item
                 drawable="@drawable/left3"
-                duration="250" />
+                duration="120" />
+            <item
+                drawable="@drawable/left4"
+                duration="120" />
         </repeat-item>
     </motion>
 
@@ -167,11 +304,11 @@
         state="wallLeft">
         <repeat-item repeatCount="2">
             <item
-                drawable="@drawable/left2"
-                duration="250" />
+                drawable="@drawable/left6"
+                duration="200" />
             <item
-                drawable="@drawable/right2"
-                duration="250" />
+                drawable="@drawable/right6"
+                duration="200" />
         </repeat-item>
     </motion>
 
@@ -180,11 +317,11 @@
         state="wallRight">
         <repeat-item repeatCount="2">
             <item
-                drawable="@drawable/right2"
-                duration="250" />
+                drawable="@drawable/right6"
+                duration="200" />
             <item
-                drawable="@drawable/left2"
-                duration="250" />
+                drawable="@drawable/left6"
+                duration="200" />
         </repeat-item>
     </motion>
 

@@ -9,6 +9,7 @@ import androidx.activity.compose.setContent
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -25,13 +26,15 @@ import androidx.compose.material3.OutlinedButton
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.material3.TopAppBar
+import androidx.compose.material3.TopAppBarDefaults
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
@@ -100,6 +103,9 @@ class SkinActivity : ComponentActivity() {
             containerColor = MaterialTheme.colorScheme.background,
             topBar = {
                 TopAppBar(
+                    colors = TopAppBarDefaults.topAppBarColors(
+                        containerColor = MaterialTheme.colorScheme.primaryContainer,
+                    ),
                     title = {},
                     actions = {
                         IconButton(
@@ -114,6 +120,7 @@ class SkinActivity : ComponentActivity() {
                                 painter = painterResource(id = R.drawable.ic_github),
                                 modifier = Modifier.size(24.dp),
                                 contentDescription = null,
+                                tint = Color.White,
                             )
                         }
                     }
@@ -128,12 +135,38 @@ class SkinActivity : ComponentActivity() {
                 verticalArrangement = Arrangement.Center,
                 horizontalAlignment = Alignment.CenterHorizontally
             ) {
-                Image(
-                    painter = painterResource(id = R.drawable.ahead2),
-                    contentDescription = null,
-                    modifier = Modifier.size(96.dp),
-                    contentScale = ContentScale.Crop
-                )
+                Row {
+                    Image(
+                        painter = painterResource(id = R.drawable.ahead1),
+                        contentDescription = null,
+                        modifier = Modifier.size(48.dp),
+                    )
+                    Image(
+                        painter = painterResource(id = R.drawable.ahead2),
+                        contentDescription = null,
+                        modifier = Modifier.size(48.dp),
+                    )
+                    Image(
+                        painter = painterResource(id = R.drawable.ahead3),
+                        contentDescription = null,
+                        modifier = Modifier.size(48.dp),
+                    )
+                    Image(
+                        painter = painterResource(id = R.drawable.ahead4),
+                        contentDescription = null,
+                        modifier = Modifier.size(48.dp),
+                    )
+                    Image(
+                        painter = painterResource(id = R.drawable.ahead5),
+                        contentDescription = null,
+                        modifier = Modifier.size(48.dp),
+                    )
+                    Image(
+                        painter = painterResource(id = R.drawable.ahead6),
+                        contentDescription = null,
+                        modifier = Modifier.size(48.dp),
+                    )
+                }
 
                 Spacer(modifier = Modifier.height(16.dp))
 
@@ -193,7 +226,7 @@ class SkinActivity : ComponentActivity() {
                         shape = RoundedCornerShape(12.dp),
                         modifier = Modifier.fillMaxWidth()
                     ) {
-                        Text(text = stringResource(R.string.open))
+                        Text(text = stringResource(R.string.open), fontWeight = FontWeight.Bold)
                     }
 
                     Spacer(modifier = Modifier.height(12.dp))
@@ -207,7 +240,7 @@ class SkinActivity : ComponentActivity() {
                     shape = RoundedCornerShape(12.dp),
                     modifier = Modifier.fillMaxWidth()
                 ) {
-                    Text(text = stringResource(android.R.string.cancel))
+                    Text(text = stringResource(R.string.exit))
                 }
                 Spacer(
                     modifier = Modifier.weight(1f)
